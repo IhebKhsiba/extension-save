@@ -1,0 +1,37 @@
+/* Style pour le bouton */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px; /* Marge entre les boutons */
+  }
+  
+  /* Style au survol du bouton */
+  button:hover {
+    background-color: #45a049; /* Couleur de fond au survol */
+  }
+  
+  /* Style pour le bouton d'enregistrement */
+  #saveButton {
+    background-color: #2196F3; /* Couleur de fond spécifique */
+  }
+  
+  /* Style pour le bouton de restauration */
+  #restoreButton {
+    background-color: #f44336; /* Couleur de fond spécifique */
+  }
+  
+  /* Style pour le bouton d'exportation */
+  #exportButton {
+    background-color: #FFC107; /* Couleur de fond spécifique */
+  }
+  
+  /* Style pour le bouton d'importation */
+  #importButton {
+    background-color: #9E9E9E; /* Couleur de fond spécifique */
+  }
+  

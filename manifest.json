@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Gestionnaire de fenêtres",
+    "version": "1.0",
+    "description": "Enregistrez et restaurez les fenêtres ouvertes dans le navigateur.",
+    "permissions": ["tabs", "storage"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "js_popup": "popup.js",
+      "default_icon": {
+        "16": "assets/save.png",
+        "48": "assets/save.png",
+        "128": "assets/save.png"
+      }
+    }  
+}
+  
