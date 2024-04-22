@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function exportTabs() {
     chrome.storage.local.get('savedTabs', function(data) {
-      if (data.savedTabs) {
+      if (data.savedTabs) {p
         const tabsJSON = JSON.stringify(data.savedTabs);
         const blob = new Blob([tabsJSON], { type: 'application/json' });
         const url = URL.createObjectURL(blob);
@@ -51,11 +51,13 @@ document.addEventListener('DOMContentLoaded', function() {
       reader.onload = function() {
         const tabs = JSON.parse(reader.result);
         chrome.storage.local.set({ 'savedTabs': tabs });
-        alert('Onglets importés avec succès.');
+        restoreWindows();
+        alert('Onglets importés avec succès.'); 
       };
       reader.readAsText(file);
     };
   
     input.click();
   }
+
   
